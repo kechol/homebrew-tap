@@ -1,25 +1,25 @@
 class HealCli < Formula
   desc "Hook-driven Evaluation & Autonomous Loop — code-health harness CLI for AI coding agents"
   homepage "https://github.com/kechol/heal"
-  version "0.3.2"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kechol/heal/releases/download/v0.3.2/heal-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "eac7a9ac59a5257c208d9fd141637d4e80e060d901ea4c4bf8d46f7bf5755d52"
+      url "https://github.com/kechol/heal/releases/download/v0.4.0/heal-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "e3ddfce529a905d0c2e9bd4529f428d07134a6313a6f4fee4c458af7b4677d96"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kechol/heal/releases/download/v0.3.2/heal-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "f9a1f54579240c321232188b64e9abad42472e0fbe72c7341095ebc8d4924da9"
+      url "https://github.com/kechol/heal/releases/download/v0.4.0/heal-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "2b5a563b95b6c65d1b04ee0b4546b3970c69a5a89c5307a5fbad0f71b306214d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kechol/heal/releases/download/v0.3.2/heal-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0bc45218548bf28274b853a8fa687da74e75b2b14e7f299767a3d32bc89b8006"
+      url "https://github.com/kechol/heal/releases/download/v0.4.0/heal-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "bf82bf2746f16da05d996782125583e4cb266d86d46fbd5d07afdae8d24a75c6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kechol/heal/releases/download/v0.3.2/heal-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a8aecd387db05e59cd911c28b2ae245bb492c2a43296ed692d26b167f92adbf6"
+      url "https://github.com/kechol/heal/releases/download/v0.4.0/heal-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f1331937122cc4028de724dcfdb14636d87543f01268cd46262879623af4fba0"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
