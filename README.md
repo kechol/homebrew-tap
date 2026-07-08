@@ -10,3 +10,11 @@ Homebrew tap for [kechol](https://github.com/kechol)'s tools.
 brew install kechol/tap/heal-cli
 ```
 
+## kura
+
+[`kura`](https://github.com/kechol/kura) — local knowledge management CLI with Japanese-aware hybrid search.
+
+```sh
+brew install kechol/tap/kura
+```
+
