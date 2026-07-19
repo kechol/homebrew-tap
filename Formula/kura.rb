@@ -1,28 +1,28 @@
 class Kura < Formula
   desc "Local knowledge management CLI with Japanese-aware hybrid search"
   homepage "https://github.com/kechol/kura"
-  version "0.1.0"
+  version "0.2.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/kechol/kura/releases/download/v0.1.0/kura-darwin-arm64.tar.gz"
-      sha256 "78be73f4410cc311f958bf556be6219ad6a51b254c6b6e6753f7705eaa9f8dbd"
+      url "https://github.com/kechol/kura/releases/download/v0.2.0/kura-darwin-arm64.tar.gz"
+      sha256 "45a020eb5981475a10f10e1517b3ecd2cb96648f7144374b9910ca9c0e043f01"
     end
     on_intel do
-      url "https://github.com/kechol/kura/releases/download/v0.1.0/kura-darwin-x64.tar.gz"
-      sha256 "0d808e312088f7cd8cfe3c2a5a97662f7bb34224426fc1d0288eab4b9b2196eb"
+      url "https://github.com/kechol/kura/releases/download/v0.2.0/kura-darwin-x64.tar.gz"
+      sha256 "14af835a3be88baefbbb24113943f531e9c79b15040cbe190367d0260058a558"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kechol/kura/releases/download/v0.1.0/kura-linux-arm64.tar.gz"
-      sha256 "5a8820965066e3bac30ad989b49d57e698891376d6e9cf985ea3d9a3512e1ea2"
+      url "https://github.com/kechol/kura/releases/download/v0.2.0/kura-linux-arm64.tar.gz"
+      sha256 "f8e73d49a2c404dd5ef21199addfbe0206768c478eb3cee44cc755b2e9c90e3d"
     end
     on_intel do
-      url "https://github.com/kechol/kura/releases/download/v0.1.0/kura-linux-x64.tar.gz"
-      sha256 "70fc8ad29bb4b5601a1ce5daae65d6549aaa6f316c66cfee648b110632cbeca2"
+      url "https://github.com/kechol/kura/releases/download/v0.2.0/kura-linux-x64.tar.gz"
+      sha256 "d93849cfa4da2764dd7e177bed2d88a88a97252f54e264aa718ad02d54183def"
     end
   end
 
