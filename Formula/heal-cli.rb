@@ -1,25 +1,25 @@
 class HealCli < Formula
   desc "Hook-driven Evaluation & Autonomous Loop — code-health harness CLI for AI coding agents"
   homepage "https://github.com/kechol/heal"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kechol/heal/releases/download/v0.5.0/heal-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "495bfbb04d617c310c959b4c039d158802940f9d749384aa7ed049d0ba727b84"
+      url "https://github.com/kechol/heal/releases/download/v0.6.0/heal-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "50dc36e44e78883c34026bac53227eae2ad6d7b9b452aec961676052e388b7cf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kechol/heal/releases/download/v0.5.0/heal-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "0dddf4d93a2dccbac6038746fcd695665baf208162df4a354d86124bff9baa6d"
+      url "https://github.com/kechol/heal/releases/download/v0.6.0/heal-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0695f54de3ecdec29536c36e2411b6e71be1ee9d179c0ed57e069002a0e9f0e9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kechol/heal/releases/download/v0.5.0/heal-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a461a5e4056315e3d6e2c8b367bc85200be2d18fc871abe38d1f4de11e6f23c8"
+      url "https://github.com/kechol/heal/releases/download/v0.6.0/heal-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0ee29cdb2f5a55a13c4f3a98d2951b621cc31d0fd1242f0589b9548bf66dea60"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kechol/heal/releases/download/v0.5.0/heal-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8e4d51729195d192de61e4b68cb7c3b830eff540264fbacecb573dce43a30c73"
+      url "https://github.com/kechol/heal/releases/download/v0.6.0/heal-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f3a70610e8fc228dd12503d245cb192e3705050b9ed10ca43372876d5f7c6fa7"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -48,10 +48,18 @@ class HealCli < Formula
   end
 
   def install
-    bin.install "heal" if OS.mac? && Hardware::CPU.arm?
-    bin.install "heal" if OS.mac? && Hardware::CPU.intel?
-    bin.install "heal" if OS.linux? && Hardware::CPU.arm?
-    bin.install "heal" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "heal"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "heal"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "heal"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "heal"
+    end
 
     install_binary_aliases!
 
