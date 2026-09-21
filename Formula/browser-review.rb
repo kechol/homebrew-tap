@@ -1,8 +1,8 @@
 class BrowserReview < Formula
   desc "Browser annotations for local coding agents"
   homepage "https://github.com/kechol/browser-review"
-  url "https://registry.npmjs.org/browser-review/-/browser-review-0.2.1.tgz"
-  sha256 "0b13390455893d4db08b0ef9e2e3b8aa14371dfb5e8fa2f34c58a499a04b4e55"
+  url "https://registry.npmjs.org/browser-review/-/browser-review-0.3.0.tgz"
+  sha256 "7df63ecdfebc01525cb1087a27da9a08dd0ad139abcc1e2fc316bc67270dc73c"
   license "Apache-2.0"
 
   depends_on "node"
