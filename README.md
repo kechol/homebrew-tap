@@ -18,6 +18,14 @@ brew install kechol/tap/browser-review
 brew install kechol/tap/heal-cli
 ```
 
+## kozo
+
+[`kozo`](https://github.com/kechol/kozo) — personal software factory that runs on your own machine.
+
+```sh
+brew install kechol/tap/kozo
+```
+
 ## kura
 
 [`kura`](https://github.com/kechol/kura) — local knowledge management CLI with Japanese-aware hybrid search.
