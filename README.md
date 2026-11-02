@@ -10,12 +10,12 @@ Homebrew tap for [kechol](https://github.com/kechol)'s tools.
 brew install kechol/tap/browser-review
 ```
 
-## heal-cli
+## heal
 
-[`heal-cli`](https://github.com/kechol/heal) — code health monitoring & maintenance via Claude Code hooks and skills.
+[`heal`](https://github.com/kechol/heal) — code health monitoring & maintenance via Claude Code hooks and skills.
 
 ```sh
-brew install kechol/tap/heal-cli
+brew install kechol/tap/heal
 ```
 
 ## kozo

@@ -1,4 +1,4 @@
-class HealCli < Formula
+class Heal < Formula
   desc "Hook-driven Evaluation & Autonomous Loop — code-health harness CLI for AI coding agents"
   homepage "https://github.com/kechol/heal"
   version "0.7.1"
