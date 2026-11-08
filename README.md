@@ -10,6 +10,14 @@ Homebrew tap for [kechol](https://github.com/kechol)'s tools.
 brew install kechol/tap/browser-review
 ```
 
+## evalsig
+
+[`evalsig`](https://github.com/kechol/evalsig) — statistics and signal detection for evaluation records.
+
+```sh
+brew install kechol/tap/evalsig
+```
+
 ## heal
 
 [`heal`](https://github.com/kechol/heal) — code health monitoring & maintenance via Claude Code hooks and skills.
