@@ -1,25 +1,25 @@
 class Evalsig < Formula
   desc "Command-line interface for evalsig: statistics and signal detection for evaluation records"
   homepage "https://github.com/kechol/evalsig"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kechol/evalsig/releases/download/v0.1.0/evalsig-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3ce665dbb0adf029fd6c688b775b0671fd41bf4760c25eaed44779ae018b88f6"
+      url "https://github.com/kechol/evalsig/releases/download/v0.2.0/evalsig-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "40326b84b608222458717815dcc2bc776b93b3f2a47d72356cedc9f312f83834"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kechol/evalsig/releases/download/v0.1.0/evalsig-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "6f32118da117cc4e258de1528eb0734437be921340c0618c420ff3625e6c5165"
+      url "https://github.com/kechol/evalsig/releases/download/v0.2.0/evalsig-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "ea7e6e19854303456b316e9016bc503d1bd7c91b7b0dbb061fa2bfa8e2e589fc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kechol/evalsig/releases/download/v0.1.0/evalsig-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "61834ac913d83e60e373be90e8bb4be8c5cd0b40f7da32a75f121fe6753a9bb0"
+      url "https://github.com/kechol/evalsig/releases/download/v0.2.0/evalsig-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7f9bdb2df2d732f6dd6c4cd2eca0084c64be6a04c9c2bb06fd2fa46fd3d4a578"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kechol/evalsig/releases/download/v0.1.0/evalsig-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "44282e94d512043c3286f0599d432fbfcd7d7daa3f7dc9e791ca6254755031a1"
+      url "https://github.com/kechol/evalsig/releases/download/v0.2.0/evalsig-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9bf1850868a3883ec197ea17db1961e538f37a38bc946aca9edb7471d2d993c5"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
